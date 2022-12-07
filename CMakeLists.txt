@@ -33,6 +33,10 @@ set(tiff_VERSION_ALPHA beta)
 set(SO_COMPATVERSION 5)
 set(SO_VERSION 5.2.2)
 
+if(POLICY CMP0074)
+  cmake_policy(SET CMP0074 NEW)
+endif()
+
 # For autotools header compatibility
 set(PACKAGE_NAME "LibTIFF Software")
 set(PACKAGE_TARNAME "${PROJECT_NAME}")
